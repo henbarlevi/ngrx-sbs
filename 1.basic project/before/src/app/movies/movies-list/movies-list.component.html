@@ -1,0 +1,25 @@
+<div class=" row">
+  <div class="offset-md-4 col-md-8">
+    <table class="table table-condensed  ">
+      <thead>
+        <tr>
+          <th>Index</th>
+
+          <th>Movie Name</th>
+          <th>Year</th>
+          <th>Action</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movie of movies;let i = index">
+          <td>{{i+1}}</td>
+          <td>{{movie.name}}</td>
+          <td>{{movie.year}}</td>
+          <td><button class="btn btn-danger" (click)="onDelete(i)">delete</button><button class="btn btn-info" (click)="onEdit(i)">edit</button></td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

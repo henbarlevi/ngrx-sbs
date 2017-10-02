@@ -1,0 +1,2 @@
+<movie-edit [movie]="movie" (movieChange)="onSave($event)"></movie-edit>
+<movies-list [movies]="movies" (delete)="deleteMovie($event)" (edit)="editMovie($event)"></movies-list>

@@ -1,0 +1,31 @@
+<div class="container">
+  <h2 class="text-center">New/Edit Movie</h2>
+  <hr>
+
+  <form>
+    <div class="row ">
+
+      <!--Movie Name-->
+      <div class="form-group col-md-5 ">
+        <label class="control-label " for="movieName">Name :</label>
+
+        <input type="text" class="form-control" id="movieName" [(ngModel)]="movie.name" placeholder="Enter Name" name="movieName">
+
+      </div>
+      <!--Year-->
+      <div class="form-group col-md-5">
+        <label class="control-label " for="movieYear">Year :</label>
+
+        <input type="text" class="form-control" id="movieYear" [(ngModel)]="movie.year" placeholder="Enter Year" name="movieYear">
+
+      </div>
+
+      <!--SAVE/EDIT Button-->
+      <div class="col-md-2 row">
+        <button type="button" (click)="onSave()" class="btn btn-sm col-12  btn-success">SAVE</button>
+      </div>
+    </div>
+
+  </form>
+
+</div>
